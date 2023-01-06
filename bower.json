@@ -1,11 +1,11 @@
 {
-  "name": "SidebarTransitions",
+  "name": "shinee beauty & cosmetics",
   "homepage": "https://github.com/codrops/SidebarTransitions",
   "main": [
-    "css/component.css",
-    "js/modernizr.custom.js",
-    "js/classie.js",
-    "js/sidebarEffects.js"
+    "css/base.css",
+    "js/goTop.js",
+    "js/search__function.js",
+    "js/utils.js"
   ],
   "_release": "ab5f998ca8",
   "_resolution": {
@@ -13,8 +13,8 @@
     "branch": "master",
     "commit": "ab5f998ca8174588f595533aacdc5533845ffd05"
   },
-  "_source": "git://github.com/codrops/SidebarTransitions.git",
+  "_source": "https://juanbuitrago19.github.io/shineebeauty-cosmetics__season2023/",
   "_target": "*",
-  "_originalSource": "SidebarTransitions",
+  "_originalSource": "shineebeauty-cosmetics__season2023",
   "_direct": true
 }

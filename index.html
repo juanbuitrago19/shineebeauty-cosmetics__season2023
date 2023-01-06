@@ -99,65 +99,11 @@
 				   <span id="ticker"></span>
 				 </section>
       </main>
-      
+
       <script src="js/search__function.js"></script>
-      <script>
-         $(document).ready(function() {
-         	// Show or hide the sticky footer button
-         	$(window).scroll(function() {
-         		if ($(this).scrollTop() > 200) {
-         			$('.go-top').fadeIn(200);
-         		} else {
-         			$('.go-top').fadeOut(200);
-         		}
-         	});
+      <script src="js/goTop.js"></script>
+      <script src="js/cleanInput.js"></script>
+      <script src="js/ticker.js"></script>
 
-         	// Animate the scroll to top
-         	$('.go-top').click(function(event) {
-         		event.preventDefault();
-
-         		$('html, body').animate({scrollTop: 0}, 300);
-         	})
-         });
-      </script>
-      <script>
-         var inputfocused = "";
-         document.getElementById("search").onclick = limpiaCampo;
-         var elements = document.querySelectorAll("input[type='search']");
-         for (var i = 0; i < elements.length; i++) {
-         elements[i].addEventListener("focus", function() {
-         inputfocused = this;
-         });
-         }
-
-         function limpiaCampo() {
-         inputfocused.value = "";
-         }
-      </script>
-			<script>
-				var $t = $('#ticker');
-				var $tw = $('#ticker-wrap');
-				var $w = $(window);
-				$tw.bind("transitionend", function(){
-				$tw.css({'-webkit-transition':'all linear 0s',
-									'transition':'all linear 0s'});
-				set();
-				});
-				$t.text("Aceptamos pagos con tarjetas debito y credito, transferencias bancarias, pagos contra entrega, nequi, daviplata, movii y mercado pago.   Compra y recibe al siguiente dia en bogota, (entrega entre 2 y 5 dias habiles en otras ciudades). ");
-				var fs = 20;
-				$t.css("font-size",fs+"px");
-
-				var width = $tw.width();
-				var wwidth = $w.width();
-				console.log(width)
-				function set(){
-				$tw.css({'-webkit-transform':'translate3d('+wwidth+'px,0,0)','transform':'translate3d('+wwidth+'px,0,0)'});
-				window.setInterval(function(){
-					$tw.css({'-webkit-transition':'all linear '+(((width+wwidth)/200)*2)+'s','transition':'all linear '+(((width+wwidth)/200)*2)+'s'});
-					$tw.css({'-webkit-transform':'translate3d('+(width*-1)+'px,0,0)','transform':'translate3d('+(width*-1)+'px,0,0)'});
-				},1)
-				}
-				set();
-			</script>
    </body>
 </html>
