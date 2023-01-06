@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Shinee | Beauty & Cosmetics</title>
+      <meta name="description" content="A menu that animates to a grid layout using GSAP flip" />
+      <meta name="keywords" content="Maquillaje, cosmeticos, skincare, facial, barato, economico, mobile-friendly" />
+      <meta name="author" content="Shinee beauty & cosmetics" />
+      <link rel="icon" type="image/x-icon" href="favicon.ico" /> <title>Shinee favicon</title>
+      <link rel="stylesheet" href="https://use.typekit.net/gdf6msi.css">
+      <link rel="stylesheet" type="text/css" href="css/base.css" />
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   </head>
+   <body>
+      <main>
+         <div class="frame">
+            <div class="frame__title">
+               <h1 class="frame__title-main">shinee</h1>
+               <h1 class="frame__title-main principal__title">Beauty & Cosmetics</h1>
+            </div>
+            <div class="social__space__flex">
+               <a class="frame__prevdemo hover-line" href="https://www.instagram.com/shineebeautyco/">Instagram</a>
+               <a class="frame__prevdemo hover-line" href="https://www.facebook.com/profile.php?id=100087537972113">Facebook</a>
+            </div>
+         </div>
+         <section class="content">
+            <div class="cover"></div>
+            <div class="row__special">
+               <div class="search">
+                  <form class="search-form">
+                     <input type="search" id="search-input" class="limpiarinput" placeholder="Buscar por marcas, productos o categorias...">
+                     <button type="button" id="search">Buscar</button>
+                  </form>
+               </div>
+            </div>
+         </section>
+         <section class="carousel__menu">
+            <nav class="contenedor__sticky">
+               <ul class="carousel">
+                  <li><button class="button-value cta-special-button" onclick="location.href='https://api.whatsapp.com/send?phone=+573005905212&text=Hola, me gustaria comprar por whatsapp en shinee !';" value="Compra ahora">Compra ahora 🛍️ </button></li>
+                  <li><button class="button-value" onclick="filterProduct('all')">Ver todo</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Sombras')">sombras</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Iluminadores')">Iluminadores</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Rubores')">Rubores</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Contornos')">Contornos</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Polvos')">Polvos</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Bases')">Bases</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Correctores')">Correctores</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Delineadores')">Delineadores</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Pestañinas')">Pestañinas</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Cejas')">Cejas</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Primers')">Primers</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Desmaquillantes')">Desmaquillantes</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Jabones')">Jabones Faciales</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Serums')">Serums & Acidos</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Tonicos')">Tonicos</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Hidratantes')">Hidratantes</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Mascarillas')">Mascarillas</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Cremas')">Butters & Cremas</button></li>
+                  <li><button class="button-value" onclick="filterProduct('Accesorios')">Accesorios</button></li>
+               </ul>
+            </nav>
+         </section>
+         <section class="products__wrapper">
+            <div class="container">
+               <div class="cards text-center" id="products"></div>
+            </div>
+         </section>
+         <footer class="page-footer">
+            <p class="page-footer__text">Queríamos crear una marca con una vibra única donde las personas puedan redescubrir el significado de la belleza y cuidado facial, shinee es un proyecto que empieza con un equipo de personas muy pequeño pero con un sueño muy grande <span class="bold__text">Hecho con ♥ en Colombia.</span></p>
+            <p class="page-footer__text">Fuera de nuestro interés está ser una marca convencional que se limite a vender
+               productos sin generar valor para sus clientes, es por esto que nuestra oferta de valor son productos asequibles y prácticos basados en
+               necesidades reales. Como nuestro más grande objetivo está ofrecer a nuestro publico productos de muy alta calidad y sobre todo que suplan con efectividad una necesidad en específico.
+            </p>
+            <p class="page-footer__text">Es por esto que estudiamos todas y cada una de las marcas junto con sus productos para llevar lo mejor a ustedes. Shinee es un proyecto que comparte una pasión en común por generar un espacio de aprendizaje y mejoramiento continuo de la cultura del cuidado personal y la belleza.</p>
+         </footer>
+         <section class="content">
+            <div class="cover"></div>
+            <div class="row">
+               <div class="cell cell--text">
+                  <h2 class="cell__title oh"><span class="oh__inner">Love Box<span class="icon__helper">🎁</span></span></h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="cell cell--text">
+                  <h2 class="cell__title oh"><span class="oh__inner">Contactanos<span class="icon__helper">🤝</span></span></h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="cell cell--text">
+                  <h2 class="cell__title oh"><span class="oh__inner">No encontraste lo que buscabas?<span class="icon__helper">👀</span></span></h2>
+               </div>
+            </div>
+         </section>
+         <a href="#" class="go-top">Volver arriba</a>
+				 <section id="ticker-wrap">
+				   <span id="ticker"></span>
+				 </section>
+      </main>
+      
+      <script src="js/search__function.js"></script>
+      <script>
+         $(document).ready(function() {
+         	// Show or hide the sticky footer button
+         	$(window).scroll(function() {
+         		if ($(this).scrollTop() > 200) {
+         			$('.go-top').fadeIn(200);
+         		} else {
+         			$('.go-top').fadeOut(200);
+         		}
+         	});
+
+         	// Animate the scroll to top
+         	$('.go-top').click(function(event) {
+         		event.preventDefault();
+
+         		$('html, body').animate({scrollTop: 0}, 300);
+         	})
+         });
+      </script>
+      <script>
+         var inputfocused = "";
+         document.getElementById("search").onclick = limpiaCampo;
+         var elements = document.querySelectorAll("input[type='search']");
+         for (var i = 0; i < elements.length; i++) {
+         elements[i].addEventListener("focus", function() {
+         inputfocused = this;
+         });
+         }
+
+         function limpiaCampo() {
+         inputfocused.value = "";
+         }
+      </script>
+			<script>
+				var $t = $('#ticker');
+				var $tw = $('#ticker-wrap');
+				var $w = $(window);
+				$tw.bind("transitionend", function(){
+				$tw.css({'-webkit-transition':'all linear 0s',
+									'transition':'all linear 0s'});
+				set();
+				});
+				$t.text("Aceptamos pagos con tarjetas debito y credito, transferencias bancarias, pagos contra entrega, nequi, daviplata, movii y mercado pago.   Compra y recibe al siguiente dia en bogota, (entrega entre 2 y 5 dias habiles en otras ciudades). ");
+				var fs = 20;
+				$t.css("font-size",fs+"px");
+
+				var width = $tw.width();
+				var wwidth = $w.width();
+				console.log(width)
+				function set(){
+				$tw.css({'-webkit-transform':'translate3d('+wwidth+'px,0,0)','transform':'translate3d('+wwidth+'px,0,0)'});
+				window.setInterval(function(){
+					$tw.css({'-webkit-transition':'all linear '+(((width+wwidth)/200)*2)+'s','transition':'all linear '+(((width+wwidth)/200)*2)+'s'});
+					$tw.css({'-webkit-transform':'translate3d('+(width*-1)+'px,0,0)','transform':'translate3d('+(width*-1)+'px,0,0)'});
+				},1)
+				}
+				set();
+			</script>
+   </body>
+</html>
