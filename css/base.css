@@ -126,24 +126,40 @@ a:hover {
 	outline: none;
 }
 
-/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+/* MESSAGGE FREESHIPPING BAR */
+
+.messagetext__bar {
+	width: 100%;
+  line-height: 50px;
+  text-align: center;
+  background: #f0eeab;
+  color: black;
+}
+
+.bold__text {
+	font-weight: bold;
+}
+
+/* media queries */
+
+@media only screen and (min-width : 100px) and (max-width : 600px) {
+	.messagetext__bar {
+		font-size: .8rem;
+		padding: 10px;
+		line-height: 18px;
+	}
+}
+
 a:focus {
-	/* Provide a fallback style for browsers
-	 that don't support :focus-visible */
 	outline: none;
 	background: lightgrey;
 }
 
 a:focus:not(:focus-visible) {
-	/* Remove the focus indicator on mouse-focus for browsers
-	 that do support :focus-visible */
 	background: transparent;
 }
 
 a:focus-visible {
-	/* Draw a very noticeable focus style for
-	 keyboard-focus on browsers that do support
-	 :focus-visible */
 	outline: 2px solid red;
 	background: transparent;
 }
@@ -298,7 +314,6 @@ a:focus-visible {
 	background-color: var(--color-bg-row-hover);
 }
 
-
 .search
 {
   padding: 0;
@@ -315,8 +330,7 @@ a:focus-visible {
 	justify-items: start;
 }
 
-.search input[type="search"]
-{
+.search input[type="search"] {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-size: 2rem;
 	border: 0px;
