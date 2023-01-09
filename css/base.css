@@ -595,6 +595,7 @@ a:focus-visible {
 }
 
 .carousel__menu {
+	background: red;
   width: 100%;
   margin: 0;
 	padding: 0;
@@ -605,9 +606,11 @@ a:focus-visible {
 }
 
 .contenedor__sticky {
+	background: green;
   width: 100%;
   margin: 0;
 	padding: 0;
+	z-index: 1000;
 }
 
 .carousel {
@@ -615,11 +618,13 @@ a:focus-visible {
   background: none;
   scroll-behavior: smooth;
   white-space: nowrap;
+
 }
 
 nav ul li {
   display: inline-block;
   padding: var(--padding-row) 0px;
+
 }
 
 nav ul li button.button-value {
@@ -633,6 +638,7 @@ nav ul li button.button-value {
   border-radius: 100px;
   text-decoration: none;
 	border: none;
+
 }
 
 nav ul li button.cta-special-button {
@@ -666,7 +672,7 @@ button.button-value:hover {
     	font-weight: 400;
     	font-family: neue-haas-grotesk-display, sans-serif;
     	background: black;
-      padding: 10px 20px;
+      padding: 10px 15px;
       color: #fff;
       border-radius: 100px;
       text-decoration: none;
@@ -718,6 +724,7 @@ button.button-value:hover {
         text-decoration: none;
       }
 }
+
 
 /* Products section grid*/
 
