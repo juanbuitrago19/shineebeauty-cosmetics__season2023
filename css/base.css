@@ -595,7 +595,6 @@ a:focus-visible {
 }
 
 .carousel__menu {
-	background: red;
   width: 100%;
   margin: 0;
 	padding: 0;
@@ -606,7 +605,6 @@ a:focus-visible {
 }
 
 .contenedor__sticky {
-	background: green;
   width: 100%;
   margin: 0;
 	padding: 0;
