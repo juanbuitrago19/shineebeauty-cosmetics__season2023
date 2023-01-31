@@ -1440,6 +1440,38 @@ let products = {
       state: "Labiales",
       image: "product-0000145VAR6.jpg",
     },
+    {
+      productName: "Kit x6 delineadores perlados",
+      brand: "Trendy",
+      category: "Delineadores",
+      price: "35.000",
+      state: "Delineadores",
+      image: "product-0000146.jpg",
+    },
+    {
+      productName: "BASE BB Cream (Tono 03)",
+      brand: "Trendy",
+      category: "Bases",
+      price: "25.000",
+      state: "Bases",
+      image: "product-0000147.jpg",
+    },
+    {
+      productName: "Polvos sueltos (Varios tonos)",
+      brand: "Trendy",
+      category: "Polvos",
+      price: "20.000",
+      state: "Polvos",
+      image: "product-0000148.jpg",
+    },
+    {
+      productName: "Corrector liquido magic concealer (Tono 06)",
+      brand: "Trendy",
+      category: "Correctores",
+      price: "12.000",
+      state: "Corrector",
+      image: "product-0000149.jpg",
+    },
   ],
 };
 
